@@ -9,6 +9,6 @@ import retrofit2.http.GET
 interface RetrofitService {
 
     @GET("report/total")
-    fun getReportData(): Call<CovidData>
+    fun getReportData(date:String): Call<CovidData>
 
 }
